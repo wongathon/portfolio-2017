@@ -1,0 +1,38 @@
+.navbar {
+    margin-bottom: 0px;
+    font-family: 'Raleway', sans-serif;
+	padding: 10px;
+	background-color: transparent;
+}
+
+.jumbotron.main{
+	height: 100vh;
+	background-color: black;
+	color: white;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+}
+
+p.lead {
+	font-family: 'Merriweather', serif;
+	font-style: italic;
+}
+
+div#main-text {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left:50px;
+    text-align: left;
+}
+
+p.about {
+	font-family: 'Merriweather', serif;
+	font-size: 1em;
+}
+
+div#about {
+	padding: 100px;
+}
