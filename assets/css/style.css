@@ -34,5 +34,64 @@ p.about {
 }
 
 div#about {
-	padding: 100px;
+	padding: 99px;
+}
+
+h1#page-break{
+	font-size: 100px;
+}
+
+div#skills {
+	padding: 66px;
+}
+
+i {
+	max-width: 1.8em;
+	font-family: 'devicon';
+	font-size: 6em;
+	padding: 10px;
+	margin: 66px;
+	color: white;
+	background-color: black;
+}
+
+.devicon > p {
+	font-size: 20px;
+}
+
+div#portfolio {
+	padding: 66px;
+	padding-bottom: 145px;
+	margin-top: 98px;
+	background-color: black;
+	color: white !important;
+}
+
+div.portfolio-item {
+	padding: 10px;
+	font-family: 'Merriweather', serif;
+	font-size: 1em;
+	color:   #8c8c8c !important;
+}
+
+img {
+	padding: 10px;
+	margin: 16px;
+	max-width: 266px;
+}
+
+div#contact {
+	padding: 66px;
+	font-family: 'Merriweather', serif;
+	font-size: 0.9em;
+}
+
+.form-control{
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+.btn.btn-default {
+	border-radius: 0;
 }
