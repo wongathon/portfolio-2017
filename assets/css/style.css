@@ -2,7 +2,7 @@
     margin-bottom: 0px;
     font-family: 'Raleway', sans-serif;
 	padding: 10px;
-	background-color: transparent;
+	background: rgba(0, 0, 0, 0.13);
 }
 
 .jumbotron.main{
@@ -45,24 +45,70 @@ div#skills {
 	padding: 66px;
 }
 
-i {
+i#skill {
 	max-width: 1.8em;
 	font-family: 'devicon';
-	font-size: 6em;
 	padding: 10px;
-	margin: 66px;
 	color: white;
 	background-color: black;
+	position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .devicon > p {
 	font-size: 20px;
 }
 
+
+@media only screen and (min-width: 847px) {
+	i#skill {
+		font-size: 6em;
+		margin: 66px;
+	}
+}
+
+@media only screen and (max-width: 847px) {
+	i#skill {
+		font-size: 4em;
+		margin: 53px;
+	}
+}
+
+@media only screen and (max-width: 685px) {
+	i#skill {
+		font-size: 4em;
+		margin: 52px;
+	}
+}
+
+@media only screen and (max-width: 678px) {
+	i#skill {
+		font-size: 3.8em;
+		margin: 46px;
+	}
+}
+
+@media only screen and (max-width: 635px) {
+	i#skill {
+		font-size: 2em;
+		margin: 35px;
+	}
+}
+
+@media only screen and (max-width: 494px) {
+	i#skill {
+		font-size: 2em;
+		margin: 19px;
+		line-height: 2 !important;
+	}
+}
+
 div#portfolio {
 	padding: 66px;
 	padding-bottom: 145px;
-	margin-top: 98px;
+	margin-top: 31px;
 	background-color: black;
 	color: white !important;
 }
@@ -78,6 +124,51 @@ img {
 	padding: 10px;
 	margin: 16px;
 	max-width: 266px;
+}
+
+div.app {
+	display: inline-block;
+	height: 130px;
+	width: 266px;
+	padding: 10px;
+	margin: 16px;
+	max-width: 266px;
+	border-radius: 60px;
+}
+
+h3.app-title{
+	vertical-align: middle;
+	line-height: 71px;
+	font-size: 40px;
+}
+
+div#schedulister-app {
+	font-family: 'Lobster', cursive;
+	color: #FFF;
+	background-color: #5B3256;
+}
+
+div#playlist-app {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #FFF;
+	background-color: #3A539B;
+}
+
+h3.ply-title {
+	font-weight: lighter;
+	font-size: 32px;
+}
+
+div#tattoo-app {
+	font-family: 'Quintessential', cursive;
+	color: #FFF;
+	background-color: #9c3493;
+}
+
+h3.tat-title {
+	font-size: 34px;
+	font-weight: lighter;
+	font-style: italic;
 }
 
 div#contact {

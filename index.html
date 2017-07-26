@@ -6,35 +6,36 @@
 charset=UTF-8">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:200" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quintessential|Lobster|Merriweather:300|Raleway:200" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-	<script src="https://use.fontawesome.com/925ac17c2d.js"></script>
+
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <div class="container-full">
 
 	<nav class="navbar navbar-inverse bg-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">wongathon</a>
+				<a class="navbar-brand page-scroll" href="#intro">wongathon</a>
 			</div>
 
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#about">About</a></li>
-					<li><a href="#skills">Skills</a></li>
-		      <li><a href="#portfolio">Portfolio</a></li>
-		      <li><a href="#contact">Contact</a></li>
+					<li><a class="page-scroll" href="#about">About</a></li>
+					<li><a class="page-scroll" href="#skills">Skills</a></li>
+		      <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
+		      <li><a class="page-scroll" href="#contact">Contact</a></li>
 		    </ul>
 		   </div>
 		</div>
 	</nav>
 
-	<div class="jumbotron main">
+	<div id="intro" class="jumbotron main">
 		<div id="main-text">
 			<h1 class="display2">Andrew Sullivan Wong</h1>
 			<p class="lead">Web Developer &amp; Designer</p>
@@ -76,24 +77,30 @@ charset=UTF-8">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<i class="devicon-react-original"></i>
-				<i class="devicon-nodejs-plain"></i>
-				<i class="devicon-express-original"></i>
-				<i class="devicon-javascript-plain"></i>
-				<i class="devicon-jquery-plain"></i>
-			</div>
-			<div class="col-md-8 col-md-offset-2">
-				<i class="devicon-html5-plain"></i>
-				<i class="devicon-css3-plain"></i>
-				<i class="devicon-mongodb-plain"></i>
-				<i class="devicon-sequelize-plain"></i>
-				<i class="devicon-mysql-plain"></i>
-			</div>
-			<div class="col-md-8 col-md-offset-2">
-				<i class="devicon-python-plain"></i>
-				<i class="devicon-github-plain"></i>
-				<i class="devicon-heroku-original"></i>
+			<div>
+				<div>
+					<i id="skill" class="devicon-react-original"></i>
+					<i id="skill" class="devicon-nodejs-plain"></i>
+					<i id="skill" class="devicon-express-original"></i>
+				</div>
+				<div>
+					<i id="skill" class="devicon-javascript-plain"></i>
+					<i id="skill" class="devicon-jquery-plain"></i>
+				</div>
+				<div>
+					<i id="skill" class="devicon-html5-plain"></i>
+					<i id="skill" class="devicon-css3-plain"></i>
+					<i id="skill" class="devicon-mongodb-plain"></i>
+				</div>
+				<div>
+					<i id="skill" class="devicon-sequelize-plain"></i>
+					<i id="skill" class="devicon-mysql-plain"></i>
+				</div>
+				<div>
+					<i id="skill" class="devicon-python-plain"></i>
+					<i id="skill" class="devicon-github-plain"></i>
+					<i id="skill" class="devicon-heroku-original"></i>
+				</div>
 			</div>
 			<br>
 		</div>
@@ -110,7 +117,9 @@ charset=UTF-8">
 		<div class="row">
 			<div class="col-md-4 col-centered">
 				<div class="portfolio-item">
-					<img src="./assets/images/screenshot-schedulister.png">
+					<div id="schedulister-app" class="app">
+						<h3 class="app-title sch-title">Schedulister <i class="fa fa-check-square-o"></i></h3>
+					</div>
 					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -121,7 +130,9 @@ charset=UTF-8">
 			</div>
 			<div class="col-md-4 col-centered">
 				<div class="portfolio-item">
-					<img src="./assets/images/screenshot-schedulister.png">
+					<div id="playlist-app" class="app">
+						<h3 class="app-title ply-title">Roadtrip Playlister</h3>
+					</div>
 					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -132,7 +143,9 @@ charset=UTF-8">
 			</div>
 			<div class="col-md-4 col-centered">
 				<div class="portfolio-item">
-					<img src="./assets/images/screenshot-schedulister.png">
+					<div id="tattoo-app" class="app">
+						<h3 class="app-title tat-title">Tattoo Zone</h3>
+					</div>
 					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -154,7 +167,7 @@ charset=UTF-8">
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
-				<form id="myform">
+				<form id="contact">
 					<div class="form-contain">
 						<label class="input-label" for="name-input">
 						<input class="form-control" name="from_name" id="name-input" placeholder="Name" type="text">
@@ -179,4 +192,28 @@ charset=UTF-8">
 	</div>
 
 </div> <!-- End Container -->
+	<!--JQuery-->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
+	<script type="text/javascript" src='./assets/js/page-scripts.js'></script>
+	
+	<script src="https://use.fontawesome.com/925ac17c2d.js"></script>
+
+	<!-- Emailjs -->
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+		<script type="text/javascript">
+		   (function(){
+		      emailjs.init("user_8akmkVQBGBrcP7xP8Ksjh");
+		   })();
+		</script>
+	<script type="text/javascript" src='./assets/js/email.js'></script>
 </body>
+</html>
