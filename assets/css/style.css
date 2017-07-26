@@ -5,10 +5,18 @@
 	background: rgba(0, 0, 0, 0.13);
 }
 
+button.navbar-toggle {
+	border-radius: 0;
+}
+
+span.icon-bar {
+	background-color: #4d4d4d !important;
+}
+
 .jumbotron.main{
 	height: 100vh;
 	background-color: black;
-	color: white;
+	color:  #f2f2f2;
 }
 
 h1 {
@@ -41,16 +49,18 @@ h1#page-break{
 	font-size: 100px;
 }
 
-div#skills {
-	padding: 66px;
+@media only screen and (max-width: 690px) {
+	h1#page-break {
+		font-size: 79px;
+	}
 }
 
 i#skill {
 	max-width: 1.8em;
 	font-family: 'devicon';
 	padding: 10px;
-	color: white;
-	background-color: black;
+/*	color: white;
+	background-color: black;*/
 	position: relative;
     min-height: 1px;
     padding-right: 15px;
@@ -110,7 +120,12 @@ div#portfolio {
 	padding-bottom: 145px;
 	margin-top: 31px;
 	background-color: black;
-	color: white !important;
+	color:  #f2f2f2 !important;
+}
+
+hr#greyer {
+	color: #8c8c8c;
+	border-color: #8c8c8c;
 }
 
 div.portfolio-item {
@@ -156,7 +171,7 @@ div#playlist-app {
 
 h3.ply-title {
 	font-weight: lighter;
-	font-size: 32px;
+	font-size: 35px;
 }
 
 div#tattoo-app {
@@ -166,7 +181,7 @@ div#tattoo-app {
 }
 
 h3.tat-title {
-	font-size: 34px;
+	font-size: 41px;
 	font-weight: lighter;
 	font-style: italic;
 }
