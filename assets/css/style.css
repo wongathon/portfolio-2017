@@ -5,6 +5,10 @@
 	background: rgba(0, 0, 0, 0.13);
 }
 
+body {
+	min-width: 600px;
+}
+
 button.navbar-toggle {
 	border-radius: 0;
 }
@@ -49,74 +53,104 @@ h1#page-break{
 	font-size: 100px;
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 1440px) {
+	.col-odd{
+	    margin-left: 30vw;
+	}
+
+	.col-even{
+		margin-left: 36vw;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.col-odd{
+	    margin-left: 25vw;
+	}
+
+	.col-even{
+		margin-left: 32vw;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.col-odd{
+	    margin-left: 24vw;
+	}
+
+	.col-even{
+		margin-left: 32vw;
+	}
+}
+
+@media only screen and (max-width: 953px) {
+	.col-odd{
+	    margin-left: 19vw;
+	}
+
+	.col-even{
+		margin-left: 27vw;
+	}
+}
+
+
+@media only screen and (max-width: 860px) {
 	h1#page-break {
 		font-size: 79px;
 	}
+
+	.col-odd{
+	    margin-left: 7vw;
+	}
+
+	.col-even{
+		margin-left: 19vw;
+	}
 }
+
+@media only screen and (max-width: 650px) {
+	.col-odd{
+	    margin-left: 3vw;
+	}
+
+	.col-even{
+		margin-left: 15vw;
+	}
+}
+
 
 div#skills {
 	padding: 66px;
 }
 
-i#skill {
-	max-width: 1.8em;
-	font-family: 'devicon';
-	padding: 10px;
-/*	color: white;
-	background-color: black;*/
+div.skill {
+	float: left;
+	margin: 1em 2em; width: 100px; height: 100px; 	
+	display: block; text-align: center; line-height:103px;
+	font-family: 'Merriweather', serif;
 	position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+	transform:rotateY(0deg);
+	transition:transform .25s ease-out;
+	transform-style:preserve-3d;
 }
 
-.devicon > p {
-	font-size: 20px;
+div.skill > div {
+	width: 100px; height: 100px; background: #FFF;
+	position: absolute; top: 0; left: 0; right: 0; bottom: 0;
 }
 
-
-@media only screen and (min-width: 847px) {
-	i#skill {
-		font-size: 6em;
-		margin: 66px;
-	}
+div.skill >.front {
+	font-size: 4em;
+	transform:translateZ(40px);
+}
+div.skill >.back {
+	background:  #333; font-size: 18px;
+	color: #FFF;
+	transform:rotateY(-100deg) translateZ(40px);
 }
 
-@media only screen and (max-width: 847px) {
-	i#skill {
-		font-size: 4em;
-		margin: 53px;
-	}
-}
-
-@media only screen and (max-width: 685px) {
-	i#skill {
-		font-size: 4em;
-		margin: 52px;
-	}
-}
-
-@media only screen and (max-width: 678px) {
-	i#skill {
-		font-size: 3.8em;
-		margin: 46px;
-	}
-}
-
-@media only screen and (max-width: 635px) {
-	i#skill {
-		font-size: 2em;
-		margin: 35px;
-	}
-}
-
-@media only screen and (max-width: 494px) {
-	i#skill {
-		font-size: 2em;
-		margin: 19px;
-		line-height: 2 !important;
-	}
+div.skill:hover {
+	transform: rotateY(100deg);
 }
 
 div#portfolio {
