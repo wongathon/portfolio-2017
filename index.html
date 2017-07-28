@@ -65,7 +65,7 @@ charset=UTF-8">
 		</div>
 	</div>
 
-	<div class="row text-center">
+	<div class="row">
 		<div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
 			<hr>
 			<h1 id="page-break" class="display 3" class="line-it">&#8801;</h1>
@@ -82,33 +82,132 @@ charset=UTF-8">
 		</div>
 		<br>
 		<div class="row">
-			<div>
-				<div>
-					<i id="skill" class="devicon-react-original"></i>
-					<i id="skill" class="devicon-nodejs-plain"></i>
-					<i id="skill" class="devicon-express-original"></i>
+			<div class="col-odd"> <!--First -->
+				<div class="skill">
+					<div class="front">
+						<i id="skill" class="devicon-react-original"></i>
+					</div>
+					<div class="back">
+						<p>React</p>
+					</div>
 				</div>
-				<div>
-					<i id="skill" class="devicon-javascript-plain"></i>
-					<i id="skill" class="devicon-jquery-plain"></i>
+				<div class="skill">
+					<div class="front">
+						<i id="skill" class="devicon-nodejs-plain"></i>
+					</div>
+					<div class="back">
+						<p>Node.js</p>
+					</div>
 				</div>
-				<div>
-					<i id="skill" class="devicon-html5-plain"></i>
-					<i id="skill" class="devicon-css3-plain"></i>
-					<i id="skill" class="devicon-mongodb-plain"></i>
+				<div class="skill">
+					<div class="front">
+						<i id="skill" class="devicon-express-original"></i>
+					</div>
+					<div class="back">
+						<p>Express</p>
+					</div>
+				</div>		
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-even">
+				<div class="skill">
+					<div class="front">
+						<i id="skill" class="devicon-javascript-plain"></i>
+					</div>
+					<div class="back">
+						<p>Javascript</p>
+					</div>
 				</div>
-				<div>
-					<i id="skill" class="devicon-sequelize-plain"></i>
-					<i id="skill" class="devicon-mysql-plain"></i>
-				</div>
-				<div>
-					<i id="skill" class="devicon-python-plain"></i>
-					<i id="skill" class="devicon-github-plain"></i>
-					<i id="skill" class="devicon-heroku-original"></i>
+				<div class="skill">
+					<div class="front">
+						<i id="skill" class="devicon-jquery-plain"></i>
+					</div>
+					<div class="back">
+						<p>jQuery</p>
+					</div>
 				</div>
 			</div>
-			<br>
 		</div>
+		<div class="row">
+			<div class="col-odd">
+				<div class="skill">
+					<div class="front">
+						<i id="skill" class="devicon-html5-plain"></i>
+					</div>
+					<div class="back">
+						<p>HTML5</p>
+					</div>
+				</div>
+				<div class="skill">
+					<div class="front">
+						<i id="skill" class="devicon-css3-plain"></i>
+					</div>
+					<div class="back">
+						<p>CSS3</p>
+					</div>
+				</div>
+				<div class="skill">
+					<div class="front">
+						<i id="skill" class="devicon-mongodb-plain"></i>
+					</div>
+					<div class="back">
+						<p>MongoDB</p>
+					</div>
+				</div>				
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-even">
+				<div class="skill">
+					<div class="front">
+						<i id="skill" class="devicon-sequelize-plain"></i>
+					</div>
+					<div class="back">
+						<p>Sequelize</p>
+					</div>
+				</div>
+				<div class="skill">
+					<div class="front">
+						<i id="skill" class="devicon-mysql-plain"></i>
+					</div>
+					<div class="back">
+						<p>MySQL</p>
+					</div>
+				</div>
+			</div>					
+		</div>
+		<div class="row">
+			<!--Last -->
+			<div class="col-odd">
+				<div class="skill">
+					<div class="front">
+						<i id="skill" class="devicon-python-plain"></i>
+					</div>
+					<div class="back">
+						<p>Python</p>
+					</div>
+				</div>
+				<div class="skill">
+					<div class="front">
+						<i id="skill" class="devicon-github-plain"></i>
+					</div>
+					<div class="back">
+						<p>GitHub</p>
+					</div>
+				</div>
+				<div class="skill">
+					<div class="front">
+						<i id="skill" class="devicon-heroku-original"></i>
+					</div>
+					<div class="back">
+						<p>Heroku</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<br>
 	</div>
 
 	<div id="portfolio" class="text-center">
@@ -120,7 +219,7 @@ charset=UTF-8">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4 col-centered">
+			<div class="col-md-4">
 				<div class="portfolio-item">
 					<div id="schedulister-app" class="app" onclick="location.href='https://schedulister.herokuapp.com/';">
 						<h3 class="app-title sch-title">Schedulister <i class="fa fa-check-square-o"></i></h3>
@@ -128,7 +227,7 @@ charset=UTF-8">
 					<p>Schedulister is a smart to-do list app that handles task display that helps users manage their habits. Displays daily tasks based on the current date, using backend logic to recalculate when tasks will next appear, handling daily, weekly, and monthy recurring tasks as well as one-time scheduled tasks. Full MERN stack app with JS and Moment.js logic.</p>
 				</div>
 			</div>
-			<div class="col-md-4 col-centered">
+			<div class="col-md-4">
 				<div class="portfolio-item">
 					<div id="playlist-app" class="app" onclick="location.href='https://wongathon.github.io/P1-roadtrip-playlister/';">
 						<h3 class="app-title ply-title">Roadtrip Playlister</h3>
@@ -136,7 +235,7 @@ charset=UTF-8">
 					<p>Roadtrip Playlister was my first project app, built with Javascript/HTML/CSS, using jQuery and APIs to generate a playlist based on geographic points along a mapped route, considering the places the user will pass on the route and how long the trip will take. The idea was to result in an app that would give you a thematic playlist for any roadtrip!</p>
 				</div>
 			</div>
-			<div class="col-md-4 col-centered">
+			<div class="col-md-4">
 				<div class="portfolio-item">
 					<div id="tattoo-app" class="app" onclick="location.href='https://tattoo-zone.herokuapp.com';">
 						<h3 class="app-title tat-title">Tattoo Zone</h3>
