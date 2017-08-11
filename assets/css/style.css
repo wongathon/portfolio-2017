@@ -50,7 +50,11 @@ div#about {
 }
 
 h1#page-break{
-	font-size: 100px;
+	font-size: 46px;
+}
+
+#page-break-inner{
+	font-size: 40px;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -62,6 +66,17 @@ h1#page-break{
 		margin-left: 36vw;
 	}
 }
+
+@media only screen and (max-width: 1300px) {
+	.col-odd{
+	    margin-left: 27vw;
+	}
+
+	.col-even{
+		margin-left: 34vw;
+	}
+}
+
 
 @media only screen and (max-width: 1200px) {
 	.col-odd{
@@ -200,6 +215,11 @@ div#schedulister-app {
 	font-family: 'Lobster', cursive;
 	color: #FFF;
 	background-color: #5B3256;
+}
+
+i.fa.fa-check-square-o {
+	color: #FFF;
+	font-size: 34px;
 }
 
 div#playlist-app {
